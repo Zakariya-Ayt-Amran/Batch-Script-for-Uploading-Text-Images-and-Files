@@ -1,41 +1,56 @@
-# Text and Image Uploader
+# Text, Image and File Uploader Script
 
-A simple batch script to upload text and image files to 0x0.st and get a shareable link.
+This is a Windows batch script designed for uploading text, images, and various file types to the online service 0x0.st. The script utilizes curl to handle the file uploads and provides direct URLs to the uploaded files.
+
+## Features
+
+- Upload text files
+- Upload images
+- Upload other file types (e.g., .txt, .pdf, .docx...)
+
+## Prerequisites
+
+- **Windows OS**: This script is designed for Windows environments.
+- **curl**: The script uses `curl`, which is included by default in Windows 10 (version 1803 and later) and Windows 11. If you are using an older version of Windows, you may need to install `curl` manually.
 
 ## How to Use
 
 1. **Download the script**: Download the `UploadScript.bat` file to your computer.
+
 2. **Run the script**: Double-click on the `UploadScript.bat` file to run it.
 
-![Text And Image Uploader](https://github.com/user-attachments/assets/d2b35b9e-4fca-44ef-8dfc-3a3043fa8aaf)
+3. **Follow the prompts**:
+- **Select the type of content**: Choose between uploading text, images, or other file types.
 
-3. **Select content type**:
-    - Enter `1` to upload text.
-    - Enter `2` to upload an image.
+![Text And Image Uploader](https://github.com/user-attachments/assets/dc94dae4-59c5-4fbb-8bcf-db49963b7c5d)
 
-![Text And Image Uploader](https://github.com/user-attachments/assets/dd1a1fe4-17f8-40a4-8a68-a41317e0f2f8)
-![Text And Image Uploader](https://github.com/user-attachments/assets/d2ebe3f0-9aba-4138-9d33-c7f4b557dcf0)
+- **Provide file or text**: Depending on your choice, enter the text or the file path you want to upload.
 
-4. **Follow the prompts**:
-    - If you chose to upload text, enter the text you want to upload when prompted.
-    - If you chose to upload an image, enter the path to the image file when prompted.
+![Screenshot_9](https://github.com/user-attachments/assets/674093e2-93f7-458e-8a5f-6a27ccb860f0)
 
-![Text And Image Uploader](https://github.com/user-attachments/assets/bc6d5d58-279a-4858-8477-66735f0535b5)
+- **Retrieve URL**: After uploading, the script will display a URL where you can access the uploaded content.
 
-5. **Get the link**: After the upload is complete, you will receive a shareable link to the uploaded content.
-
-## Features
-
-- **Supports both text and images**: Easily switch between uploading text and image files.
-- **Simple and user-friendly**: Easy-to-follow prompts guide you through the upload process.
-- **Temporary file cleanup**: Automatically deletes temporary files created during the upload process.
-
-## Requirements
-
-- **Windows OS**: The script is designed to run on Windows operating systems.
-- **Curl**: Ensure `curl` is installed and available in your system's PATH.
+![Screenshot_4](https://github.com/user-attachments/assets/0bd5a72e-769e-49f0-99b9-9f9d38463c8e)
 
 ## Notes
 
-- **File not found**: If the specified file path does not exist, the script will prompt you to check the path and try again.
-- **Invalid choice**: If an invalid option is selected, the script will prompt you to run it again and select a valid option.
+- **File Restrictions**: The script checks file types based on the platform's restrictions. Ensure that the file types you upload comply with these restrictions.
+
+![Screenshot_7](https://github.com/user-attachments/assets/db2d0b91-f7ae-4e83-850f-61eda0d55dfa)
+
+- **File Restrictions**: The script allows the upload of various file types, except for the following restricted file types:
+  - `.exe` (Executable files)
+  - `.rar` (Compressed archive files)
+  - `.jar` (Java archive files)
+
+- **Temporary Files**: The script creates temporary files for text uploads, which are deleted after the upload is completed.
+
+## Troubleshooting
+
+- **File not found**: Ensure the file path you provide is correct and that the file exists.
+
+![Screenshot_6](https://github.com/user-attachments/assets/302c31a7-0603-4f63-9445-e97ab7ceef4d)
+
+## Contact
+
+For any questions or issues, please open an issue in the GitHub repository.
