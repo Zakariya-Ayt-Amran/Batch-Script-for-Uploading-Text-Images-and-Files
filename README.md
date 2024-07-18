@@ -22,7 +22,7 @@ This is a Windows batch script designed for uploading text, images, and various 
 3. **Follow the prompts**:
 - **Select the type of content**: Choose between uploading text, images, or other file types.
 
-![Text And Image Uploader](https://github.com/user-attachments/assets/dc94dae4-59c5-4fbb-8bcf-db49963b7c5d)
+![Screenshot_1](https://github.com/user-attachments/assets/89cd2100-d4e8-4d98-9ff5-af0ee2012102)
 
 - **Provide file or text**: Depending on your choice, enter the text or the file path you want to upload.
 
