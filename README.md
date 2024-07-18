@@ -1,4 +1,4 @@
-# Text, Image and File Uploader Script
+# Script for Uploading Text, Images, and Files
 
 This is a Windows batch script designed for uploading text, images, and various file types to the online service 0x0.st. The script utilizes curl to handle the file uploads and provides direct URLs to the uploaded files.
 
