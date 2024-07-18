@@ -42,7 +42,8 @@ call :ColorText 0f "-"& call :ColorText 0C "1"& call :ColorText 0b ")"& call :Co
 call :ColorText 0f "-"& call :ColorText 0C "2"& call :ColorText 0b ")"& call :ColorText 0F "upload image"& echo;
 call :ColorText 0f "-"& call :ColorText 0C "3"& call :ColorText 0b ")"& call :ColorText 0F "upload other file types ("& call :ColorText 0e "e.g., .txt, .pdf, .docx...)" & echo;
 echo.
-set /p choice=Enter your choice (1, 2, or 3): 
+call :ColorText 0A "Enter your choice"& call :ColorText 0F " ("& call :ColorText 0C " 1"& call :ColorText 0F ","& call :ColorText 0C " 2"& call :ColorText 0F ","& call :ColorText 0E " or"& call :ColorText 0C " 3"& call :ColorText 0F " )"
+set /p choice=: 
 echo.
 
 if "%choice%"=="1" (
