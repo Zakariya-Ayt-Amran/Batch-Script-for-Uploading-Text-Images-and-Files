@@ -1,5 +1,7 @@
 @echo off
+:TAMOROT
 setlocal enabledelayedexpansion
+
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
   set "DEL=%%a"
 )
@@ -16,8 +18,6 @@ if errorlevel 1 (
     pause >nul
     exit /b
 )
-
-:TAMOROT
 
 :: Display welcome message
 
